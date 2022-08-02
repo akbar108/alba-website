@@ -1,0 +1,37 @@
+/* Theme Name: Alba
+Theme URI: https://7per8.com/
+Author: Billy D. Hidayat
+Author URI: https://www.instagram.com/billydamara/
+Description: Graha Trans by 7per8 Themes
+Version: 1.0 */
+/* line 1, sass/_typography.scss */
+
+
+@import "./typography";
+@import "./header";
+
+@import "./pages/home";
+@import "./pages/footer";
+@import "./pages/about";
+
+
+// PARTS
+@import "./parts/Image";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    overflow-x: hidden;
+    font-family: 'TT Hoves';
+    font-style: normal;
+
+
+}
+
+
+

@@ -1,0 +1,298 @@
+
+$text-grey: #808080;
+
+$text-white: white;
+
+.carousel-indicators {
+  display: flex;
+  flex-direction: column;
+  // justify-content: flex-start;
+  margin-left: 20px !important;
+ transform: translate(0, -150%);
+ position: absolute;
+}
+
+.carousel-indicators li {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+  flex-shrink: 3;
+  margin-bottom: -5px;
+  
+  
+}
+
+.carousel-indicators li.active {
+ 
+  z-index: 9999;
+}
+
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: $text-white;
+  
+    &::before {
+      content: "";
+      background: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  
+    img.carousel-image {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+    .container-fluid {
+      position: absolute;
+    
+    }
+
+    .carousel-text {
+      transform: translate(60%);
+    }
+  }
+
+  .home-section-2 {
+    background:  #D9D9D9;
+    height: 100vh;
+    width: auto;
+
+    .text {
+      color: $text-grey;
+    }
+
+    
+
+ 
+
+
+    .product-text {
+      color:  $text-grey;
+    }
+
+    .product-link {
+      background: #D9D9D9;
+      padding-bottom: 50px;
+    }
+
+    .product-text-mobile {
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+      font-size: 15px;
+      line-height: 19px;
+      color: $text-white;
+    }
+
+    .link-mobile {
+      text-align: center;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      line-height: 18px;
+      color: white;
+    }
+    
+    .img-home-section-2 {
+      background-color: white;
+  
+    }
+    
+// .product {
+//   height: auto !important;
+// }
+ 
+  }
+
+
+
+  
+
+  @media (max-width: 768px) {
+    .carousel-indicators {
+      display: flex;
+      // background-color: red;
+      flex-direction: row;
+     justify-content: flex-start;
+    //   margin-left: 20px !important;
+    //  transform: translate(0, -150%);
+   
+     
+    }
+
+    .text.left {
+      font-size: 33px;
+    }
+
+   
+
+    .carousel-text {
+      font-size: 3rem;
+      transform: translateY( 20%) !important;
+    }
+
+    .home-section-2 {
+      height: 150vh;
+    }
+
+    .bg {
+      background-size: cover;
+    }
+
+    .text-wrapper-section3 {
+      bottom: 500px;
+    }
+
+  }
+
+ 
+
+  @media (min-width: 1000px) {
+    .original-product {
+      display: flex;
+      justify-content: center;
+      transform: translateY(100px);
+    }
+  }
+
+//  .bg {
+//   overflow: hidden;
+  
+//  }
+
+ .wrapp {
+  padding: 0 !important;
+  height: 100vh;
+ }
+
+.text-wrapper-section3 {
+  color: $text-white;
+  margin: 0 !important;
+}
+
+ .text-left-section3 {
+  position: absolute;
+  bottom: 400px;
+  left: 50px;
+ }
+
+ .year {
+  position: absolute;
+  font-size: 250px;
+  bottom: 50px;
+  top: 110px;
+  
+ }
+
+ .text-right-section3 {
+  position: absolute;
+  bottom: 200px;
+  left: 100px;
+  font-size: 20px;
+  font-weight: 300;
+ }
+
+ .button {
+  position: absolute;
+  bottom: 170px;
+  left: 100px;
+ }
+
+ .home-section-4 {
+  background: #1E1E1E;
+  color: $text-white;
+  width: auto;
+  height: 100vh;
+  // margin-bottom: 100px;
+ }
+
+ .section-4-title {
+  padding-top: 50px;
+  padding-inline: 50px;
+  display: flex;
+  justify-content: space-between;
+ }
+
+//  .section-4-wrapper {
+//   margin-bottom: 100px;
+//  }
+ 
+
+ .container-section-4 {
+  margin-top: 50px;
+  height: 100vh;
+  
+}
+
+.item {
+  position: relative;
+}
+
+.section-4-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.section-5-image {
+  position: relative;
+}
+
+.section-5-text {
+  position: absolute;
+}
+
+.section-5-text.left {
+  top: 40%;
+  left: 5%;
+ font-size: 64px;
+  color: $text-white;
+}
+
+.section-5-text.right {
+  top: 55%;
+  left: 70%;
+  color: $text-white;
+}
+
+.section-5-button {
+  position: absolute;
+  left: 85%;
+  top: 65%;
+}
+
+@media (max-width: 768px) {
+  .section-5-text.left {
+    // background: red;
+    font-size: 35px;
+    top: 10%;
+    left: 5%;
+  }
+
+  .section-5-text.right {
+    top: 75%;
+    left: 10%;
+    font-size: 18px;
+    color: $text-white;
+  }
+
+  .section-5-button {
+    left: 10%;
+    top: 85%;
+  }
+}
+
+
+
+ 
